@@ -1,0 +1,326 @@
+:root {
+  --page-title-color: white;
+  --page-title-hover-color: rgba(230, 230, 230, 0.696);
+  --main-color: white;
+  --nav-panel-height: 10vh;
+  --nav-panel--item-font: Arial, Helvetica, sans-serif;
+  --nav-panel--item-hover-color: rgb(165, 165, 165);
+  --info-block--title-font-family: Arial, Helvetica, sans-serif;
+  --info-block--subtitle-color: rgb(68, 68, 68);
+  --info-block--content-color: rgb(84, 84, 84);
+  --division-line-color: rgb(211, 211, 211);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+h2, h3, h4, h5, h6 {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+header, main, footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 65%;
+  margin: auto;
+}
+
+.page-header {
+  height: 90vh;
+  position: relative;
+}
+
+.title-block {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+}
+
+.title {
+  font-size: 2.3em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: var(--page-title-color);
+}
+
+.title:hover {
+  color: var(--page-title-hover-color);
+}
+
+.nav-panel {
+  position: sticky;
+  top: -1px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--nav-panel-height);
+  border-bottom: 1px solid var(--division-line-color);
+  background-color: var(--main-color);
+}
+
+.nav-panel .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-panel__items {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  column-gap: 35px;
+}
+
+.nav-panel__item {
+  font-size: 0.9em;
+  font-weight: bold;
+  font-family: var(--nav-panel--item-font);
+}
+
+.nav-panel__item:hover {
+  color: var(--nav-panel--item-hover-color);
+  cursor: pointer;
+}
+
+.to-main-link {
+  width: 30px;
+  height: 30px;
+  background: url("../img/arrow-down.png");
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.info-block {
+  padding: calc(var(--nav-panel-height) + 20px) 20px 120px 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--main-color);
+}
+
+.info-block__section-name {
+  flex-grow: 1;
+  font-family: var(--info-block--title-font-family);
+  font-weight: bold;
+}
+
+.info-block__title {
+  font-size: 0.95em;
+}
+
+.info-block__description {
+  width: 60%;
+}
+
+.info-block__subtitle {
+  font-size: 2em;
+  font-family: var(--info-block--title-font-family);
+  color: var(--info-block--subtitle-color);
+}
+
+.info-block__subtitle_small {
+  font-size: 1em;
+  color: black;
+}
+
+.info-block__section-title {
+  font-size: 1.1em;
+  font-weight: normal;
+  font-family: var(--info-block--title-font-family);
+}
+
+.info-block__section-title_margin {
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.info-block__section-title_italic {
+  font-style: italic;
+}
+
+.info-block__subtitle_margin {
+  margin: 20px 0px;
+}
+
+.info-block__subtitle_grey {
+  color: rgb(143, 143, 143);
+}
+
+.info-block__content {
+  font-size: 1.1em;
+  text-align: justify;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--info-block--content-color);
+}
+
+.text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--info-block--content-color);
+}
+
+.text-important {
+  font-weight: bold;
+  color: rgb(81, 81, 81);
+}
+
+.text-higlight-bold {
+  font-weight: bold;
+}
+
+.text-higlight-italic {
+  font-style: italic;
+}
+
+.price-description__prices {
+  list-style-type: circle;
+}
+
+.price-description__prices_margin {
+  margin-top: 20px;
+}
+
+.price-description__price-item {
+  margin: 20px 0px;
+}
+
+.games-description {
+  margin-top: 100px;
+}
+
+.games-description__list {
+  margin-top: 30px;
+  list-style-type: square;
+}
+
+.transparent-gradient {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.24));
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.main-background {
+  height: 90vh;
+  background-position: center top;
+}
+
+.footer {
+  padding-top: 50px;
+  border-top: 1px solid var(--division-line-color);
+}
+
+.about-us {
+  display: flex;
+}
+
+.about-us__general {
+  width: 40%;
+  flex-shrink: 1;
+  position: relative;
+}
+
+.about-us__section {
+  margin-top: 20px;
+}
+
+.about-us__adress-title {
+  font-size: 0.9em;
+}
+
+.about-us__address {
+  margin: 0px;
+  padding: 0px;
+  font-size: 0.9em;
+}
+
+.about-us__schedule-block {
+  margin-bottom: 20px;
+}
+
+.about-us__schedule-block-title {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.about-us__schedule-details {
+  padding: 0px;
+  margin: 0px;
+  font-size: 0.9em;
+}
+
+.about-us__schedule-title {
+  font-size: 1em;
+}
+
+.about-us__general_right {
+  flex: 1 1 auto;
+}
+
+.about-us__site {
+  flex: 1 1 auto;
+}
+
+.about-us__title {
+  font-size: 0.8em;
+}
+
+.about-us__section {
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.about-us__location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 160px;
+  border: 1px solid black;
+}
+
+.about-us__site {
+  position: absolute;
+  bottom: 0;
+}
+
+.about-us__site-title {
+  margin-top: 20px;
+  font-size: 0.85em;
+}
+
+.copyright {
+  margin-top: 30px;
+  padding: 20px 0px;
+  font-size: 0.8em;
+  text-align: center;
+  color: rgb(192, 192, 192);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -118,7 +118,7 @@ a {
     width: 30px;
     height: 30px;
 
-    background: url('../img/arrow-down.png');
+    background: url('../../img/arrow-down.png');
     background-position: center center;
     background-size: cover;
 
@@ -243,9 +243,26 @@ a {
     background-size: cover;
 }
 
-.main-background {
+.background-main {
     height: 90vh;
+    background-image: url('../img/main-background.webp');
     background-position: center top;
+}
+
+.background-restaurant {
+    background-image: url('../img/restaurant-background.webp');
+}
+
+.background-pub {
+    background-image: url('../img/pub-background.webp');
+}
+
+.background-club {
+    background-image: url('../img/club-background.webp');
+}
+
+.background-karaoke {
+    background-image: url('../img/karaoke-background.webp');
 }
 
 .footer {
